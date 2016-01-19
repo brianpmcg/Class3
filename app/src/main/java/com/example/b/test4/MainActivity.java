@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             throw new Exception("Example Exception thrown!");
         }
         catch (Exception ex){
-            Log.e(Constants.appName, this.getClass().getCanonicalName() +":"+ + ":Exception:"+ex.getMessage());
+            Log.e(Constants.appName, this.getClass().getCanonicalName() +":"+MyUtil.methodName()+ ":Exception:"+ex.getMessage());
         }
 
         //starting up our example service
